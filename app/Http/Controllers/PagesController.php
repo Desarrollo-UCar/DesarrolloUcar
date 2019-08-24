@@ -118,7 +118,7 @@ class PagesController extends Controller
         //return $reserva;
         $id_vehiculo     = $reserva['id_vehiculo'];
         $id_reserva      = $reserva['id_reserva'];
-        $servicios       = $reserva['id'];
+        $servicios        = $reserva['id'];
 
         $vehiculo       = App\Vehiculo::findOrFail($id_vehiculo);
         $datos_reserva  = App\reserva_temp::findOrFail($id_reserva);
