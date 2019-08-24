@@ -120,7 +120,7 @@ class PagesController extends Controller
         $id_reserva      = $reserva['id_reserva'];
         $servicios        = $reserva['id'];
 
-        $vehiculo       = App\Vehiculo::findOrFail($id_vehiculo);
+        $vehiculo        = App\Vehiculo::findOrFail($id_vehiculo);
         $datos_reserva  = App\reserva_temp::findOrFail($id_reserva);
 
         $devolucion = new DateTime($datos_reserva->fecha_devolucion);
