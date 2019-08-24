@@ -94,7 +94,7 @@ class PagesController extends Controller
     }
 
     public function en_construccion2(Request $email){
-        $correo   = $email['email'];
+        $correo   = $email['email'];       
        //return response()->json($email);
         $cliente= App\Cliente::where('correo','=',$correo)->first();
         return response()->json($cliente);
