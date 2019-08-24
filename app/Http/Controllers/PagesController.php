@@ -117,7 +117,7 @@ class PagesController extends Controller
     public function reservar_realizar_pago(Request $reserva){
         //return $reserva;
         $id_vehiculo     = $reserva['id_vehiculo'];
-        $id_reserva      = $reserva['id_reserva'];
+        $id_reserva        = $reserva['id_reserva'];
         $servicios        = $reserva['id'];
 
         $vehiculo        = App\Vehiculo::findOrFail($id_vehiculo);
