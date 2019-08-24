@@ -125,7 +125,7 @@ class PagesController extends Controller
 
         $devolucion = new DateTime($datos_reserva->fecha_devolucion);
         $salida     = new DateTime($datos_reserva->fecha_recogida);
-        $diferencia = $salida->diff($devolucion);
+        $diferencia = $salida->diff($devolucion);     
         $dias = $diferencia->format('%a');
 
         $servicios_extra = [];
