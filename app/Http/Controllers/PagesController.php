@@ -98,7 +98,7 @@ class PagesController extends Controller
        //return response()->json($email);
         $cliente= App\Cliente::where('correo','=',$correo)->first();
         return response()->json($cliente);
-        return view('en_construccion');    
+        return view('en_construccion');       
     }
 
     public function reservar_servicios_extra(Request $reserva){
